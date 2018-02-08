@@ -1,0 +1,10 @@
+
+
+
+.C{
+  grid-column: span 2;
+  color: red;
+  background: hsla(100, 100%, 50%, 0.2);
+}
+
+
