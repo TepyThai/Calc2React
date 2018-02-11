@@ -11,7 +11,6 @@ const Wrapper = styled.div`
 
 const Title = styled.h2`
   color: #009588;
-  fontFamily: 'sans-serif';
   text-align: center;
 `
 
