@@ -1,17 +1,25 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Calculator from './Calculator';
+import styled from 'styled-components';
 
-const styles = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center',
-};
+const Wrapper = styled.div`
+  display: grid;
+  grid-template: 2 / 1;
+  grid-gap: 10px;
+`
+
+const Title = styled.h2`
+  color: #009588;
+  fontFamily: 'sans-serif';
+  text-align: center;
+`
 
 const App = () => (
-  <div style={styles}>
-    <Calculator name="CodeSandbox" />
-    
-  </div>
+  <Wrapper>
+    <Title>Calc2React by: @tepythai</Title>
+    <Calculator/>
+  </Wrapper>
 );
 
 render(<App />, document.getElementById('root'));
